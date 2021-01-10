@@ -6,7 +6,6 @@ import pygame
 
 WIDTH = 800
 WIN = pygame.display.set_mode((WIDTH, WIDTH))
-pygame.display.set_caption("Breadth First Search Algorithm")
 
 RED = (255, 0, 0)
 GREEN = (0, 255, 0)
@@ -120,8 +119,9 @@ def BFSAlgo(draw, start, end):
 	open_set_hash = {start}
 
 	while queue:
-		# Sets the current node as the next value in the queue 
+		# Sets the current node as the next value in the queue which removes it form the queue and the hash
 		current = queue.pop(0)
+		open_set_hash.remove(current)
 
 		# if we found the end, recreate the path
 		if current == end:
@@ -277,7 +277,7 @@ def mainAStar(win, width):
 		for event in pygame.event.get():
 			# If the user quits the app, change run to FALSE
 			if event.type == pygame.QUIT:
-				run = False
+				pygame.quit()
 
 			# If user left clicks a square
 			if pygame.mouse.get_pressed()[0]: 
@@ -350,7 +350,7 @@ def mainBFS(win, width):
 		for event in pygame.event.get():
 			# If the user quits the app, change run to FALSE
 			if event.type == pygame.QUIT:
-				run = False
+				pygame.quit()
 
 			# If user left clicks a square
 			if pygame.mouse.get_pressed()[0]: 

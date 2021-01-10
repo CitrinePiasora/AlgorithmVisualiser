@@ -5,7 +5,7 @@ import Visualizers
  
 mainClock = pygame.time.Clock()
 pygame.init()
-pygame.display.set_caption('Main Menu')
+pygame.display.set_caption('Project Minotaur')
 WIDTH = 800
 WIN = pygame.display.set_mode((WIDTH, WIDTH))
 
@@ -63,9 +63,11 @@ def main_menu():
         
         if button_1.collidepoint((mx, my)):
             if click:
+                pygame.display.set_caption("Breadth First Search Algorithm")
                 Visualizers.mainBFS(WIN, WIDTH)
         if button_2.collidepoint((mx, my)):
             if click:
+                pygame.display.set_caption("A* Search Algorithm")
                 Visualizers.mainAStar(WIN, WIDTH)
         if button_3.collidepoint((mx, my)):
             if click:
