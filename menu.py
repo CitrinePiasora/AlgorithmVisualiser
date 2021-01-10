@@ -96,11 +96,11 @@ def credits():
  
         draw_text('Credits', HelpFont, (BLACK), WIN, 20, 20)
         draw_text("Stanlly", OptionFont, (BLACK), WIN, 25, 100)
-        draw_text("Research and Primary Coder", CreditsFont, (BLACK), WIN, 25, 200)
+        draw_text("Research, Analysis, Primary Coder", CreditsFont, (BLACK), WIN, 25, 200)
         draw_text("Mika Mahaputra", OptionFont, (BLACK), WIN, 25, 300)
-        draw_text("Research and Coding", CreditsFont, (BLACK), WIN, 25, 400)
-        draw_text("Gadtardi Wongtaren", OptionFont, (BLACK), WIN, 25, 500)
-        draw_text("Documentation and Research", CreditsFont, (BLACK), WIN, 25, 600)
+        draw_text("Research, Coding, Menu Designer", CreditsFont, (BLACK), WIN, 25, 400)
+        draw_text("Gadtardi Wongkaren", OptionFont, (BLACK), WIN, 25, 500)
+        draw_text("Documentation, Research, Analysis", CreditsFont, (BLACK), WIN, 25, 600)
         for event in pygame.event.get():
             if event.type == QUIT:
                 pygame.quit()
