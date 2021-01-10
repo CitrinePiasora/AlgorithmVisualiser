@@ -1,7 +1,4 @@
-from collections import deque
 from queue import PriorityQueue
-from sys import float_repr_style
-from tkinter.constants import FALSE
 import pygame
 
 WIDTH = 800
