@@ -1,9 +1,4 @@
-from collections import deque
-from sys import float_repr_style
-from tkinter.constants import FALSE
 import pygame
-import math
-from queue import PriorityQueue
 
 WIDTH = 800
 WIN = pygame.display.set_mode((WIDTH, WIDTH))
